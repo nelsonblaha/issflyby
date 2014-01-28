@@ -37,7 +37,12 @@ class ApplicationController < ActionController::Base
       end
     end
 
+    #hi mom!
     def index
-      
+      #build an array of the astronauts' names
+      @iss_crew = []
+      Spaceperson.all.each do |john_blaha|
+        @iss_crew << john_blaha
+      end
     end 
 end

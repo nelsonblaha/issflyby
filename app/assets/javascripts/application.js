@@ -14,6 +14,18 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-$( document ).ready(function() {
-    $('#iss').animate({"top": "30%",  "right": "110%"}, 30000, "linear");
-});
+
+// animate the ISS
+    $( document ).ready(function() {
+        $('#iss').animate({"top": "30%",  "right": "110%"}, 30000, "linear");
+    });
+
+// prepare the array of astronauts
+    iss_crew = $('div#glasscard img').data('altsrcs');
+
+    console.log(iss_crew);
+
+// maintain the card stack
+    $('div#glasscard').click(function(e){
+
+    });

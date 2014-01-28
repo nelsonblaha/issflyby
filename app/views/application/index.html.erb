@@ -1,6 +1,6 @@
 <h1 id="appheader">ISS Flyby for Glass</h1>
 <div id="glasscard">
-    <img src="/samplecard.png" alt="ISS Flyby"/>
+    <img src="/samplecard.png" alt="ISS Flyby" data-altsrcs="<%= @iss_crew %>"/>
 </div>
 <% if current_user %>
     <%= link_to 'send demo card', demo_card_path %>
